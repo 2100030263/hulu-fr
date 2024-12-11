@@ -1,0 +1,72 @@
+.header {
+  color: white;
+  display: flex;
+  /* background-color: black; */
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.header__icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 100px;
+}
+
+.header__icon > .MuiSvgIcon-root {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__icon > p {
+  display: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+}
+.header__icon:hover > p {
+  display: inline;
+}
+.header__icon--active p {
+  display: inline !important;
+}
+.header img {
+  object-fit: contain;
+  height: 80px;
+}
+.header__search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.header__search input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.header__search button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #f9a825;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header__search button:hover {
+  background-color: #d68f15;
+}
